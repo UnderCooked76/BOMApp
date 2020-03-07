@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOMApp", "BOMApp\BOMApp.csproj", "{3292E9D0-F15B-4BE8-9EA6-AA7FE67E1FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOMAppTests", "BOMAppTests\BOMAppTests.csproj", "{3491D110-DD49-4DE8-92EB-04BFE7BF6552}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3292E9D0-F15B-4BE8-9EA6-AA7FE67E1FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3292E9D0-F15B-4BE8-9EA6-AA7FE67E1FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3292E9D0-F15B-4BE8-9EA6-AA7FE67E1FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3292E9D0-F15B-4BE8-9EA6-AA7FE67E1FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3491D110-DD49-4DE8-92EB-04BFE7BF6552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3491D110-DD49-4DE8-92EB-04BFE7BF6552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3491D110-DD49-4DE8-92EB-04BFE7BF6552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3491D110-DD49-4DE8-92EB-04BFE7BF6552}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C0F0B72-3DC7-4679-80DF-EBA98A73DAF6}
+	EndGlobalSection
+EndGlobal
