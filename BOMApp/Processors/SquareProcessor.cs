@@ -10,24 +10,25 @@ namespace BOMApp
         /// <returns>string for a Square Widget</returns>
         public string Process()
         {
-            Square squares = new Square();
+            Square square = new Square();
 
+            Console.WriteLine("Please enter the values for your Square Widget");
             try
             {
                 // Prompt to user for X Postion
-                string posX = UserPrompts.PromptForWidgetValue("Position X", squares.PositionX);
+                string posX = UserPrompts.PromptForWidgetValue("Position X", square.PositionX);
 
                 // Validate the user input. If valid, stores the value in the object
-                squares.PositionX = string.IsNullOrEmpty(posX) ? squares.PositionX : Validation.ValidatePositionValue(posX);
+                square.PositionX = string.IsNullOrEmpty(posX) ? square.PositionX : Validation.ValidatePositionValue(posX);
 
-                string posY = UserPrompts.PromptForWidgetValue("Position Y", squares.PositionY);
-                squares.PositionY = string.IsNullOrEmpty(posY) ? squares.PositionY : Validation.ValidatePositionValue(posY);
+                string posY = UserPrompts.PromptForWidgetValue("Position Y", square.PositionY);
+                square.PositionY = string.IsNullOrEmpty(posY) ? square.PositionY : Validation.ValidatePositionValue(posY);
 
-                string width = UserPrompts.PromptForWidgetValue("Width", squares.Width);
-                squares.Width = string.IsNullOrEmpty(width) ? squares.Width : Validation.ValidateSizeValue(width);
+                string width = UserPrompts.PromptForWidgetValue("Width", square.Width);
+                square.Width = string.IsNullOrEmpty(width) ? square.Width : Validation.ValidateSizeValue(width);
 
                 // If all the user input is valid, pass the object on to have a BOM statement constructed
-                return BOMBuilder(squares);
+                return BOMBuilder(square);
             }
             // Any problems are caught and an exception is thrown
             catch (Exception ex)
@@ -39,9 +40,9 @@ namespace BOMApp
         /// <summary>
         /// Takes a square object and constructs a BOM statement
         /// </summary>
-        /// <param name="squares">Square object</param>
+        /// <param name="square">Square object</param>
         /// <returns></returns>
-        public string BOMBuilder(Square squares)
-            => $"Square({squares.PositionX},{squares.PositionY}) size={squares.Width}";
+        public string BOMBuilder(Square square)
+            => $"Square({square.PositionX},{square.PositionY}) size={square.Width}";
     }
 }
